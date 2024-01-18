@@ -3452,6 +3452,9 @@ input, select, textarea {
 
 	}
 
+
+	/*Faculty Info*/
+
 	.faculty-info{
 		display: flex;
 	}
@@ -3464,3 +3467,209 @@ input, select, textarea {
 	.info-text p{
 		margin: 0 0 1em 0;
 	}
+
+	/*Gallery*/
+	/* *{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	} */
+	.container{
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 50px 8%;
+	
+		max-width: 1200px;
+		margin: 0 auto;
+	
+	}
+	.gallery{
+		/* display: grid; */
+		grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+		grid-gap: 10px;
+	
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.gallery img{
+		width: 100%;
+	
+		height: 100%;
+		object-fit: cover; /* Maintain aspect ratio while covering the container */
+		display: block;
+		transition: transform 0.3s ease-in-out;
+	}
+	
+	.gallery a {
+		flex-basis: calc(25% - 10px);
+		margin-bottom: 20px;
+		overflow: hidden;
+		height: 200px; /* Set a fixed height for the container */
+	}
+	
+	
+	
+	.gallery a:hover img {
+		transform: scale(1.1);
+	}
+	
+	.navbar {
+		background-color: #3498db; /* Blue background */
+		color: #fff; /* White text */
+		padding: 10px;
+		text-align: center;
+	}
+	
+
+	/*Profile Card*/
+	
+	body{
+		background-color: white;
+		font-family: "Century Gothic";
+	
+	}
+	
+	
+	.title{
+		text-align: center;
+		text-transform: capitalize;
+		color: #3498db;
+		margin: 10px 0;
+		position: relative;
+	}
+	
+	.title::after{
+		content: "";
+		position: absolute;
+		width: 20%; height: 2px;
+		background-image: linear-gradient(to left, transparent 5%, #3498db);
+		bottom: -10px; left: 50%;
+		transform: translate(-50%);
+	}
+	
+	.team-row{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 10px 0;
+	}
+	
+	.member{
+		background-color: white;
+		flex: 1 1 250px;
+		margin: 20px;
+		text-align: center;
+		padding: 20px 10px;
+		cursor: pointer;
+		max-width: 300px;
+		transition: all 0.3s;
+	}
+	
+	.member:hover{
+		box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+		transform: translateY(-20px);
+	}
+	
+	.member img{
+		display: block;
+		width: 150px; height: 150px;
+		object-fit: cover;
+		border:4px solid #3498db;
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+	
+	.member h2{
+		text-transform: uppercase;
+		font-size: 24px;
+		color: #3498db;
+		margin: 15px 0;
+	}
+	.member h4{
+		text-transform: uppercase;
+		font-size: 18px;
+		color: #838383;
+		margin: 5px 0;
+	}
+	.member p{
+		font-size: 15px;
+		color: #838383;
+		line-height: 1.6;
+	}
+
+
+	/*Profile Page*/
+	/* body{
+		background-color:#ccc;
+		font-family: 'Montserrat', sans-serif;
+	  } */
+	.page-header {
+		background-color: #3498db;
+		height: 100px;
+		margin: 0;
+	}
+	
+	.profile-container {
+		width: 70%;
+		margin: auto;
+		background-color: #fff;
+		padding: 30px;
+		margin-top: -50px;
+		height: auto;
+	}
+	
+	.user-name {
+		color: #0e2f44;
+		font-weight: bold;
+	}
+	
+	.user-mail {
+		color: #858585;
+	}
+	
+	.user-company {
+		font-weight: bold;
+		color: #5ad45c;
+	}
+	
+	.more-info {
+		background-color: #e5e5e5;
+		border-bottom: #ccc 1px solid;
+	}
+	
+	.todo-links {
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	.todo-links a i {
+		margin-right: 20px;
+	}
+	
+	.todo-links a {
+		color: #000;
+		font-size: 16px;
+	}
+	
+	.more-info {
+		margin-left: 5px;
+		padding: 20px;
+	} 
+
+	.more-info p{
+		margin: 1px;
+	}
+
+	@media(max-width:1150px){
+		.profile-container{
+			width: 100%;
+		}
+	}
+
+
+	
+	
