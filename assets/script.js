@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = profilePath;
         });
     });
-    
+
     const btn1 = document.getElementById("btn1");
     const btn2 = document.getElementById("btn2");
 
@@ -40,5 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
             msgContainer.style.display = "block";
             msg = true;
         }
+    });
+
+    // Add smooth scrolling to all links with the # symbol
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });

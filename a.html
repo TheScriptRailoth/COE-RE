@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+
+    <style>
+        /* announcement */
+
+	.announcement{
+		margin: 10px 50px 10px 50px;
+		display: flex;
+		padding: 0 20px;
+	}
+
+	.announcement .msgContainer{
+		height: 400px;
+		overflow-y: scroll;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		width: 90%;
+	}
+
+	.announcement .msgContainer::-webkit-scrollbar{
+		display: none;
+	}
+
+	.announcement .msgContainer2{
+		height: 400px;
+		overflow-y: scroll;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		width: 90%;
+	}
+
+	.announcement .msgContainer2::-webkit-scrollbar{
+		display: none;
+	}
+
+	.announcement .new{
+		box-shadow: 2px 0px #c3c4c5;
+		margin-right: 10px;
+	}
+
+	.announcement .press{
+		box-shadow: inset 2px 0px #c3c4c5;
+		padding-left: 10px;
+	}
+
+	.announcement p{
+		border-bottom: 1px solid rgb(117, 116, 116);
+	}
+
+	.heading1{
+		display: flex;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	#btn1{
+		margin-right: 10px;
+		padding: 5px;
+	}
+
+	#btn2{
+		padding: 5px;
+		background-color: white;
+		color: black;
+	}
+
+	.announcement .msgContainer2{
+		display: none;
+	}
+
+	.card {
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		padding: 15px;
+		margin-bottom: 10px;
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	.card:hover {
+		transform: scale(1.05);
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	}
+
+	@keyframes scrollAnimation {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(calc(-100% + 400px)); /* Adjust the card height */
+		}
+	}
+
+	@media(max-width:930px){
+		.announcement{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+	}
+		}
+div #announce {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 48%;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.whats-new-section {
+    text-align: center;
+    min-height: 180px; /* Adjust this value based on your content */
+}
+
+.news-item {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slide 20s infinite linear; /* Increase animation duration to slow it down */
+    box-sizing: border-box;
+}
+
+.new-tag {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+@keyframes slide {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-20%); } /* Adjusted percentages */
+    50% { transform: translateY(-40%); }
+    75% { transform: translateY(-60%); }
+    100% { transform: translateY(0); }
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="Announce">
+
+        <section class="announcement">
+            <div class="new">
+                <h2>What's New</h2>
+                <div class="msgContainer">
+                    <!-- Cards for What's New content -->
+                    <div class="card">
+                        <a href=""><p>Memorandum of understanding between Jaypee University of Engineering and Technology Guna and Madhya Pradesh</p></a>
+                    </div>
+                    <!-- Add more cards as needed -->
+                </div>
+            </div>
+
+            <div class="message">
+                <div class="heading1">
+                    <button id="btn1">Messages</button>
+                    <button id="btn2">Events</button>
+                </div>
+                <div class="msgContainer" id="msgContainer">
+                    <!-- Messages content -->
+                    <a href=""><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis provident corrupti commodi</p></a>
+                    <!-- Add more messages as needed -->
+                </div>
+                <div class="msgContainer2" id="msgContainer2">
+                    <!-- Additional messages content if needed -->
+                </div>
+            </div>
+
+            <div class="press">
+                <h2>Press Releases</h2>
+                <div class="msgContainer">
+                    <!-- Press Releases content -->
+                    <a href=""><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis provident corrupti commodi</p></a>
+                    <!-- Add more press releases as needed -->
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="whats-new-section">
+                <h2>What's New</h2>
+                <div class="news-item">
+                    <span class="new-tag">New</span>
+                    <p>Latest news lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="news-item">
+                    <p>More news lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

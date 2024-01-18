@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Center Of Excellence of Renewable</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+      .c-item {
+        height: 480px;
+      }
+
+      .c-img {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+      }
+      #header {
+      padding: 0.5em 0 0 0;
+      }
+      #header h1 {
+        font-size: 1.3em;
+        display: block;
+        letter-spacing: -0.025em;
+        border: 0;
+        padding: 0 0 2.8em 0;
+        margin: 0;
+      }
+      #nav > ul {
+        margin: 0;
+        font-size: 1.3em;
+      }
+      #logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .c {
+        flex-grow: 1;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      .a {
+        background-color: green;
+        overflow: hidden; /* Hide the overflow of the image */
+		  height: 100%;
+		
+      }
+
+      #logoJuet {
+        max-width: 100%; /* Set a maximum width for the image */
+        width: 10em;
+        height: 10em;
+        object-fit: cover; /* Maintain the aspect ratio and cover the container */
+      }
+
+      .b {
+        background-color: blue;
+      }
+
+      .c {
+        background-color: red;
+      }
+      /* New styles for the vision and mission section */
+      #vision-mission {
+        background-color: #336699;
+        color: #fff;
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .vm-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .vm-card {
+        flex: 1;
+        max-width: 900px;
+        margin: 20px;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out,
+          background-color 0.3s ease-in-out;
+      }
+
+      .vm-card:hover {
+        transform: scale(1.05);
+        background-color: #e6f7ff; /* Light blue on hover */
+      }
+
+      .vm-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #336699; /* Dark blue for titles */
+      }
+
+      .vm-description {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Add animations or transitions as needed */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      .header1{
+        height: 20vh;
+        width: 100vw;
+        
+        display: flex;
+        text-align: center;
+    }
+    .logo{
+        width: 10vw;
+        height: 20vh;
+        
+    }
+    .logo img{
+        width: 10vw;
+        height: 20vh;
+    }
+    .center{
+        width: 80vw;
+        padding-top: 7vh;
+        font-size: 2rem;
+        
+    }
+    .last{
+        width: 10vw;
+        padding-top: 7vh;
+        font-size: 2rem;
+        padding-right: 10px;
+        
+    }
+    /* Remove blue color on carousel controls hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: transparent;
+}
+
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header">
+        <!-- <div class="header1">
+          <div class="logo">
+               <img src="images/juetlogo.jpg" alt="juet">
+          </div>
+          <div class="center">
+              <h1>
+                    Center of excellence<em> for Renewable Energy</em></a>
+              </h1>
+          </div>
+          <div class="last">
+              <h1>
+                  COE-<em>RE</em></a>
+              </h1>
+          </div>
+      </div> -->
+        <!-- Nav -->
+          <nav id="nav">
+            <ul>
+              <li class="current"><a href="AboutUs.html">About Us</a></li>
+              <li>
+                <div class="dropdown">
+                  <a href="">Research</a>
+                  <div class="dropdown-content">
+                    <a href="consultancy.html" style="padding: 5px 0px 0px 0px"
+                      ><p>Consultancy</p></a
+                    >
+                    <a href="Project.html" style="padding: 5px 0px 0px 0px"
+                      ><p>Projects</p></a
+                    >
+                    <!-- <a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Phasellus magna</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam nisl</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Veroeros feugiat</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Lorem dolor</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a> -->
+                  </div>
+                </div>
+              </li>
+              <li><a href="Team.html">Team</a></li>
+              <li><a href="Publications.html">Publications</a></li>
+              <li><a href="Collaborations.html">Collaborations</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+			        <li><a href="#footer">Contact Us</a></li>
+            </ul>
+          </nav>
+		</div>
+      <!-- Bootstrap 5 Carousel Slider -->
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="https://images.unsplash.com/photo-1579033461380-adb47c3eb938?fit=crop&w=1964&q=100"
+              class="d-block w-100 c-img"
+              alt="Slide 1"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase"></p>
+              <h1 class="display-1 fw-bolder" style="padding: 0.7em">
+                Centre of Excellence for Renewable Energy
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?fit=crop&w=2134&q=100"
+              class="d-block w-100 c-img"
+              alt="Slide 2"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5"></p>
+              <p class="display-1 fw-bolder" style="padding: 0.7em">
+                Centre of Excellence for Renewable Energy
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="https://images.unsplash.com/photo-1612686635542-2244ed9f8ddc?fit=crop&w=2070&q=100"
+              class="d-block w-100 c-img"
+              alt="Slide 3"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5"></p>
+              <p class="display-1 fw-bolder" style="padding: 0.7em">
+                Centre of Excellence for Renewable Energy
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Banner -->
+
+      <section id="banner">
+        <header style="padding: 2rem;">
+          <h2 class="moving-text">
+            <marquee direction="left">COE-RE: <em>Upcoming Event: International Conference of Renewable Energy 2024<a href="#"></a></em></marquee>
+          </h2>
+          <!-- <a href="#" class="button">Learn More</a> -->
+        </header>
+      </section>
+
+      
+
+      <!-- Vision and Mission Section -->
+      <section id="vision-mission" class="fade-in">
+        <div class="vm-container">
+          <div class="vm-card">
+            <div class="vm-title">Our Vision</div>
+            <div class="vm-description">
+              To achieve excellence as a hub for exploring, educating, and advocating renewable energy, with the goal of providing the university community with the necessary knowledge to excel in research, education, and community engagement within the transformative realm of renewable energy and tools to play a leading role in shaping sustainable solutions.
+            </div>
+          </div>
+        </div>
+
+        <div class="vm-container"> 
+          <div class="vm-card">
+            <div class="vm-title">Our Mission</div>
+              <div class="vm-description">
+              <ol>
+                <li>Pioneering global research, confronting energy challenges for sustainable solutions</li>
+                <li>Cultivate deep understanding and equip students for renewable energy.</li>
+                <li>Advocating policies, forging alliances, and engaging communities in sustainable energy missions.</li>
+              </ol>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="announcement">
+        <div class="new">
+          <h2>What's New</h2>
+          <div class="msgContainer">
+            <div class="card">
+				<!-- <h3>Card Title 1</h3> -->
+				<a href=""><p>Memorandum of understanding between Jaypee University of Engineering and Technology Guna and Madhya Pradesh</p></a>
+			  </div>
+            <div class="card">
+				<!-- <h3>Card Title 2</h3> -->
+				<a href=""><p>Memorandum of understanding between Jaypee University of Engineering and Technology Guna and Madhya Pradesh</p></a>
+			  </div>
+            <div class="card">
+				<!-- <h3>Card Title 3</h3> -->
+				<a href=""><p>Memorandum of understanding between Jaypee University of Engineering and Technology Guna and Madhya Pradesh</p></a>
+			  </div>
+            <div class="card">
+				<!-- <h3>Card Title 4</h3> -->
+				<a href=""><p>Memorandum of understanding between Jaypee University of Engineering and Technology Guna and Madhya Pradesh</p></a>
+			</div>
+            <div class="card">
+              <!-- <h3>Card Title 5</h3> -->
+              <a href=""><p>Memorandum of understanding between Jaypee University of Engineering and Technology Guna and Madhya Pradesh</p></a>
+            </div>
+            <div class="card">
+              <!-- <h3>Card Title 6</h3> -->
+              <a href=""><p>Memorandum of understanding between Jaypee University of Engineering and Technology Guna and Madhya Pradesh
+                </p></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="message">
+          <div class="heading1">
+            <button id="btn1">Messages</button>
+            <button id="btn2">Events</button>
+          </div>
+          <div class="msgContainer" id="msgContainer">
+            <a href=""
+              ><p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis provident corrupti commodi
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam ea officia et soluta asperiores
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                explicabo, laudantium soluta
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis provident corrupti commodi
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam ea officia et soluta asperiores
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                explicabo, laudantium soluta
+              </p></a
+            >
+          </div>
+          <div class="msgContainer2" id="msgContainer2">
+            <a href=""
+              ><p>
+                ok Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis provident corrupti commodi
+              </p></a
+            >
+            <a href=""
+              ><p>
+                ok Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam ea officia et soluta asperiores
+              </p></a
+            >
+            <a href=""
+              ><p>
+                ok Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                explicabo, laudantium soluta
+              </p></a
+            >
+            <a href=""
+              ><p>
+                ok Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis provident corrupti commodi
+              </p></a
+            >
+            <a href=""
+              ><p>
+                pk Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam ea officia et soluta asperiores
+              </p></a
+            >
+            <a href=""
+              ><p>
+                pk Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                explicabo, laudantium soluta
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="press">
+          <h2>Press Releases</h2>
+          <div class="msgContainer">
+            <a href=""
+              ><p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis provident corrupti commodi
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam ea officia et soluta asperiores
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                explicabo, laudantium soluta
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis provident corrupti commodi
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam ea officia et soluta asperiores
+              </p></a
+            >
+            <a href=""
+              ><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                explicabo, laudantium soluta
+              </p></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Highlights -->
+      <section class="wrapper style1">
+        <div class="container">
+          <div class="row gtr-200">
+            <section class="col-4 col-12-narrower">
+              <div class="box highlight">
+                <i class="icon solid major fa-paper-plane"></i>
+                <h3>This Is Important</h3>
+                <p>
+                  Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+                  dapibus nisl amet mattis, sed a rutrum accumsan sed.
+                  Suspendisse eu.
+                </p>
+              </div>
+            </section>
+            <section class="col-4 col-12-narrower">
+              <div class="box highlight">
+                <i class="icon solid major fa-pencil-alt"></i>
+                <h3>Also Important</h3>
+                <p>
+                  Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+                  dapibus nisl amet mattis, sed a rutrum accumsan sed.
+                  Suspendisse eu.
+                </p>
+              </div>
+            </section>
+            <section class="col-4 col-12-narrower">
+              <div class="box highlight">
+                <i class="icon solid major fa-wrench"></i>
+                <h3>Probably Important</h3>
+                <p>
+                  Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+                  dapibus nisl amet mattis, sed a rutrum accumsan sed.
+                  Suspendisse eu.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gigantic Heading -->
+      <section class="wrapper style2">
+        <div class="container">
+          <header class="major">
+            <h2>A gigantic heading you can use for whatever</h2>
+            <p>With a much smaller subtitle hanging out just below it</p>
+          </header>
+        </div>
+      </section>
+
+      <!-- Posts -->
+      <section class="wrapper style1">
+        <div class="container">
+          <div class="row">
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/b5.png" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>The First Thing</h3>
+                  <p>
+                    Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+                    dapibus nisl amet mattis, sed a rutrum accumsan sed.
+                    Suspendisse eu.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/b2.png" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>The Second Thing</h3>
+                  <p>
+                    Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+                    dapibus nisl amet mattis, sed a rutrum accumsan sed.
+                    Suspendisse eu.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="row">
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/b3.png" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>The Third Thing</h3>
+                  <p>
+                    Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+                    dapibus nisl amet mattis, sed a rutrum accumsan sed.
+                    Suspendisse eu.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/b4.png" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>The Fourth Thing</h3>
+                  <p>
+                    Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+                    dapibus nisl amet mattis, sed a rutrum accumsan sed.
+                    Suspendisse eu.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta" class="wrapper style3">
+        <div class="container">
+          <header>
+            <h2>This is coe-re</h2>
+            <a href="#" class="button">Explore</a>
+          </header>
+        </div>
+      </section>
+
+      <!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">Links to Stuff 1</a></li>
+								<li><a href="#">Links to Stuff 2</a></li>
+								<li><a href="#">Links to Stuff 3</a></li>
+								<li><a href="#">Links to Stuff 4</a></li>
+								<li><a href="#">Links to Stuff 5</a></li>
+								<li><a href="#">Links to Stuff 6</a></li>
+								<li><a href="#">Links to Stuff 7</a></li>
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>More Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">More Links to Stuff 1</a></li>
+								<li><a href="#">More Links to Stuff 2</a></li>
+								<li><a href="#">More Links to Stuff 3</a></li>
+								<li><a href="#">More Links to Stuff 4</a></li>
+								<li><a href="#">More Links to Stuff 5</a></li>
+								<li><a href="#">More Links to Stuff 6</a></li>
+								<li><a href="#">More Links to Stuff 7</a></li>
+							</ul>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<h3>Get In Touch</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+					</ul>
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="#">-----</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="./assets/script.js"></script>
+
+
+</body>
+</html>

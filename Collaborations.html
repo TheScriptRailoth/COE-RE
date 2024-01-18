@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Consultancy Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+main.table {
+    width: 82vw;
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2rem; /* Add top margin for better spacing */
+}
+
+.table__header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table__body {
+    padding: 1rem; /* Add padding to the table body for better spacing */
+    overflow: auto; /* Add overflow for scrolling if the table becomes too long */
+}
+
+/* Add space between table rows */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem; /* Add top margin for better spacing between table and header */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Add border for better visibility */
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Style alternate rows for better readability */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style the status column */
+td .status {
+    margin: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    main.table {
+        width: 90vw;
+    }
+}
+
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Logo -->
+            <h1><a href="index.html" id="logo">Center of excellence<em> for Renewable Engineering</em></a></h1>
+            <!-- Nav -->
+            <!-- Nav -->
+          <nav id="nav">
+            <ul>
+              <li class="current"><a href="AboutUs.html">About Us</a></li>
+              <li>
+                <div class="dropdown">
+                  <a href="">Research</a>
+                  <div class="dropdown-content">
+                    <a href="consultancy.html" style="padding: 5px 0px 0px 0px"
+                      ><p>Consultancy</p></a
+                    >
+                    <a href="Project.html" style="padding: 5px 0px 0px 0px"
+                      ><p>Projects</p></a
+                    >
+                    <!-- <a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Phasellus magna</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam nisl</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Veroeros feugiat</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Lorem dolor</p></a>
+										<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a> -->
+                  </div>
+                </div>
+              </li>
+              <li><a href="Team.html">Team</a></li>
+              <li><a href="Publications.html">Publications</a></li>
+              <li><a href="Collaborations.html">Collaborations</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+			  <li><a href="#footer">Contact Us</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <!-- Main -->
+        <main class="table" id="consultancy_id">
+            <section class="table__header">
+                <h1>List Of Collaborations</h1>
+                
+                <!-- <div class="export__file">
+                    <label for="export-file" class="export__file-btn" title="Export File"></label>
+                    <input type="checkbox" id="export-file">
+                    <div class="export__file-options">
+                        <label>Export As &nbsp; &#10140;</label>
+                        <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                        <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                        <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                        <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                    </div>
+                </div> -->
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Serial. No. <span class="icon-arrow"></span></th>
+                            <th> Project Details <span class="icon-arrow"></span></th>
+                            <th> Team Members <span class="icon-arrow"></span></th>
+                            <th> Status <span class="icon-arrow"></span></th>
+            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1. </td>
+                            <td>Studies on possible conversion of JBTPP sub-critical to supercritical unit.</td>
+                            <td> <ul>
+                                <li>Prof. PMV Subba Rao, IIT Delhi.</li>
+                                <li>Dr. Pankaj Dumka, Assisstant Professor(SG), Mech, JUET, Guna.</li>
+                                <li>Dr. Dhananjay R. Mishra, Associate Professor, Mech, JUET, Guna.</li>
+                            </ul> </td>
+                            <td><p class="ongoing">on going</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">Links to Stuff 1</a></li>
+								<li><a href="#">Links to Stuff 2</a></li>
+								<li><a href="#">Links to Stuff 3</a></li>
+								<li><a href="#">Links to Stuff 4</a></li>
+								<li><a href="#">Links to Stuff 5</a></li>
+								<li><a href="#">Links to Stuff 6</a></li>
+								<li><a href="#">Links to Stuff 7</a></li>
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>More Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">More Links to Stuff 1</a></li>
+								<li><a href="#">More Links to Stuff 2</a></li>
+								<li><a href="#">More Links to Stuff 3</a></li>
+								<li><a href="#">More Links to Stuff 4</a></li>
+								<li><a href="#">More Links to Stuff 5</a></li>
+								<li><a href="#">More Links to Stuff 6</a></li>
+								<li><a href="#">More Links to Stuff 7</a></li>
+							</ul>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<h3>Get In Touch</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+					</ul>
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="#">-----</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="./assets/script.js"></script>
+    <script src="./assets/scriptC.js"></script>
+
+
+</body>
+</html>
