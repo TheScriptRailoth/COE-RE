@@ -6,46 +6,51 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="lightbox.css"/>
         <title>Image Gallery</title>
+        <style>
+        .header .bg{
+            height: 140px;
+        }</style>
     </head>
     <body>
         
 			<!-- Header -->
-            <div id="header">
-
-                <!-- Logo -->
-                <h1><a href="index.html" id="logo">Center of excellence<em> for Renewable Engineering</em></a></h1>
-                <!-- Nav -->
-          <nav id="nav">
-            <ul>
-              <li ><a href="AboutUs.html">About Us</a></li>
-              <li>
-                <div class="dropdown">
-                  <a href="">Research</a>
-                  <div class="dropdown-content">
-                    <a href="consultancy.html" style="padding: 5px 0px 0px 0px"
-                      ><p>Consultancy</p></a
-                    >
-                    <a href="Project.html" style="padding: 5px 0px 0px 0px"
-                      ><p>Projects</p></a
-                    >
-                    <!-- <a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a>
-										<a href="" style="padding: 5px 0px 0px 0px;"><p>Phasellus magna</p></a>
-										<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam nisl</p></a>
-										<a href="" style="padding: 5px 0px 0px 0px;"><p>Veroeros feugiat</p></a>
-										<a href="" style="padding: 5px 0px 0px 0px;"><p>Lorem dolor</p></a>
-										<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a> -->
+            <div class="header">
+                <div class="bg">
+                  <div class="navContainer">
+                    <nav>
+                      <div class="logo-container">
+                        <a href="https://www.juet.ac.in/">
+                            <img src="images/juetlogo.png" alt="juet" class="logo">
+                        </a>
+                    </div>
+                    <ul>
+                        <li ><a href="AboutUs.html">About Us</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="">Research</a>
+                                <div class="dropdown-content">
+                                    <a href="consultancy.html" style="padding: 5px 0px 0px 0px"
+                                        ><p>Consultancy</p></a
+                                    >
+                                    <a href="Project.html" style="padding: 5px 0px 0px 0px"
+                                        ><p>Projects</p></a
+                                    >
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="Team.html">Team</a></li>
+                        <li><a href="Publications.html">Publications</a></li>
+                        <li><a href="Collaborations.html">Collaborations</a></li>
+                        <li class="active"><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                    </ul>
+                    <div class="navText">
+                      <h1 class="coeLogo">COE-RE</h1>
+                    </div>
+                    </nav>
                   </div>
                 </div>
-              </li>
-              <li><a href="Team.html">Team</a></li>
-              <li><a href="Publications.html">Publications</a></li>
-              <li><a href="Collaborations.html">Collaborations</a></li>
-              <li class="current"><a href="Gallery.html">Gallery</a></li>
-			        <li><a href="#footer">Contact Us</a></li>
-            </ul>
-          </nav>
-
-            </div>
+              </div>
         <div class="container image-gallery">
             <div class = "gallery">
                 <a href="JVPL Images/plant_visit1.jpg" data-lightbox="models" data-title="Plant Visit">
@@ -175,56 +180,59 @@
         </div>
 
 
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <section class="col-3 col-6-narrower col-12-mobilep">
-                        <h3>Links to Stuff</h3>
-                        <ul class="links">
-                            <li><a href="#">Links to Stuff 1</a></li>
-                            <li><a href="#">Links to Stuff 2</a></li>
-                            <li><a href="#">Links to Stuff 3</a></li>
-                            <li><a href="#">Links to Stuff 4</a></li>
-                            <li><a href="#">Links to Stuff 5</a></li>
-                            <li><a href="#">Links to Stuff 6</a></li>
-                            <li><a href="#">Links to Stuff 7</a></li>
-                        </ul>
-                    </section>
-                    <section class="col-3 col-6-narrower col-12-mobilep">
-                        <h3>More Links to Stuff</h3>
-                        <ul class="links">
-                            <li><a href="#">More Links to Stuff 1</a></li>
-                            <li><a href="#">More Links to Stuff 2</a></li>
-                            <li><a href="#">More Links to Stuff 3</a></li>
-                            <li><a href="#">More Links to Stuff 4</a></li>
-                            <li><a href="#">More Links to Stuff 5</a></li>
-                            <li><a href="#">More Links to Stuff 6</a></li>
-                            <li><a href="#">More Links to Stuff 7</a></li>
-                        </ul>
-                    </section>
-                    <section class="col-6 col-12-narrower">
-                        <h3>Get In Touch</h3>
-                        <form>
-                            <div class="row gtr-50">
-                                <div class="col-6 col-12-mobilep">
-                                    <input type="text" name="name" id="name" placeholder="Name" />
-                                </div>
-                                <div class="col-6 col-12-mobilep">
-                                    <input type="email" name="email" id="email" placeholder="Email" />
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <ul class="actions">
-                                        <li><input type="submit" class="button alt" value="Send Message" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-                </div>
-            </div>
+       <!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Contact</h3>
+							<ul class="links">
+								<li><a href="https://www.juet.ac.in/">https://www.juet.ac.in/</a></li>
+								<li><a href="amit.srivastava1@juet.ac.in">amit.srivastava1@juet.ac.in</a></li>
+								<li><a href="gaurav.saxena@juet.ac.in">gaurav.saxena@juet.ac.in</a></li>
+								<li><a href="dhananjay.mishra@juet.ac.in">dhananjay.mishra@juet.ac.in</a></li>
+								<li><a href="rohit.mishra@juet.ac.in">rohit.mishra@juet.ac.in</a></li>
+								<li><a href="#">manoj.dubey@juet.ac.in</a></li>
+                <li><a href="pankaj.dumka@juet.ac.in">pankaj.dumka@juet.ac.in</a></li>
+                <li><a href="dharmendra.shukla@juet.ac.in">dharmendra.shukla@juet.ac.in</a></li>
+                <li><a href="abhishek.shukla@juet.ac.in">abhishek.shukla@juet.ac.in</a></li>
+
+							</ul>
+						</section>
+						<!-- <section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>More Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">More Links to Stuff 2</a></li>
+								<li><a href="#">More Links to Stuff 3</a></li>
+								<li><a href="#">More Links to Stuff 4</a></li>
+								<li><a href="#">More Links to Stuff 5</a></li>
+								<li><a href="#">More Links to Stuff 6</a></li>
+								<li><a href="#">More Links to Stuff 7</a></li>
+							</ul>
+						</section> -->
+						<section class="col-6 col-12-narrower">
+							<h3>Get In Touch</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
 
             <!-- Icons -->
                 <ul class="icons">

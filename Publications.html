@@ -65,48 +65,53 @@ td .status {
     }
 }
 
+.header .bg{
+    height: 140px;
+}
+
     </style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<div id="header">
-
-					<!-- Logo -->
-					<h1><a href="index.html" id="logo">Center of excellence<em> for Renewable Engineering</em></a></h1>
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-						  <li><a href="AboutUs.html">About Us</a></li>
-						  <li>
+			<div class="header">
+				<div class="bg">
+				  <div class="navContainer">
+					<nav>
+					  <div class="logo-container">
+						<a href="https://www.juet.ac.in/">
+							<img src="images/juetlogo.png" alt="juet" class="logo">
+						</a>
+					</div>
+					<ul>
+						<li ><a href="AboutUs.html">About Us</a></li>
+						<li  >
 							<div class="dropdown">
-							  <a href="">Research</a>
-							  <div class="dropdown-content">
-								<a href="consultancy.html" style="padding: 5px 0px 0px 0px"
-								  ><p>Consultancy</p></a
-								>
-								<a href="Project.html" style="padding: 5px 0px 0px 0px"
-								  ><p>Projects</p></a
-								>
-								<!-- <a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a>
-													<a href="" style="padding: 5px 0px 0px 0px;"><p>Phasellus magna</p></a>
-													<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam nisl</p></a>
-													<a href="" style="padding: 5px 0px 0px 0px;"><p>Veroeros feugiat</p></a>
-													<a href="" style="padding: 5px 0px 0px 0px;"><p>Lorem dolor</p></a>
-													<a href="" style="padding: 5px 0px 0px 0px;"><p>Etiam sed tempus</p></a> -->
-							  </div>
+								<a href="">Research</a>
+								<div class="dropdown-content">
+									<a href="consultancy.html" style="padding: 5px 0px 0px 0px"
+										><p>Consultancy</p></a
+									>
+									<a href="Project.html" style="padding: 5px 0px 0px 0px"
+										><p>Projects</p></a
+									>
+								</div>
 							</div>
-						  </li>
-						  <li><a href="Team.html">Team</a></li>
-						  <li class="current"><a href="Publications.html">Publications</a></li>
-						  <li><a href="Collaborations.html">Collaborations</a></li>
-						  <li><a href="Gallery.html">Gallery</a></li>
-						  <li><a href="#footer">Contact Us</a></li>
-						</ul>
-					  </nav>
-
+						</li>
+						<li><a href="Team.html">Team</a></li>
+						<li class="active"><a href="Publications.html">Publications</a></li>
+						<li><a href="Collaborations.html">Collaborations</a></li>
+						<li><a href="Gallery.html">Gallery</a></li>
+						<li><a href="#footer">Contact Us</a></li>
+					</ul>
+					<div class="navText">
+					  <h1 class="coeLogo">COE-RE</h1>
+					</div>
+					</nav>
+				  </div>
 				</div>
+			  </div>
 
 			<!-- Main -->
 				<section class="wrapper style1">
@@ -128,7 +133,7 @@ td .status {
 											 <!-- Main -->
 											<main class="table" id="publication_id">
 												<section class="table__header">
-													<h1>List of Publications by Dr. Dharmendra Kumar Shukla</h1>
+													<h1 id="ds">List of Publications by Dr. Dharmendra Kumar Shukla</h1>
 													<p>Jaypee University Of Engineering & Technology</p>
 													<p><a href="">Verified email at juet.ac.in</a></p>
 													<p><a href="https://scholar.google.com/citations?user=d1pdr1AAAAAJ&hl=en&oi=sra">Google Scholar</a></p>
@@ -408,7 +413,7 @@ td .status {
 											</main>
 											<main class="table" id="publication_id">
 												<section class="table__header">
-													<h1>List of Publications by Dr. Amit Kumar Srivastava
+													<h1 id="aks">List of Publications by Dr. Amit Kumar Srivastava
 													</h1>
 													<p>Jaypee University Of Engineering & Technology</p>
 													<p><a href="">Verified email at juet.ac.in</a></p>
@@ -892,7 +897,7 @@ td .status {
 											</main>
 											<main class="table" id="publication_id">
 												<section class="table__header">
-													<h1>List of Publications by Dr. Gaurav saxena</h1>
+													<h1 id="gs">List of Publications by Dr. Gaurav saxena</h1>
 													<p>Jaypee University Of Engineering & Technology</p>
 													<p><a href="">Verified email at juet.ac.in</a></p>
 													<p><a href="https://scholar.google.com/citations?user=b1yqU2gAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
@@ -1096,7 +1101,7 @@ td .status {
 											</main>
 											<main class="table" id="publication_id">
 												<section class="table__header">
-													<h1>List of Publications by Dr. Pankaj Dumka</h1>
+													<h1 id="pd">List of Publications by Dr. Pankaj Dumka</h1>
 													<p>Jaypee University Of Engineering & Technology</p>
 													<p><a href="">Verified email at juet.ac.in</a></p>
 													<p><a href="https://scholar.google.com/citations?user=sXWEmCoAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
@@ -1302,7 +1307,7 @@ td .status {
 											</main>
 											<main class="table" id="publication_id">
 												<section class="table__header">
-													<h1>List of Publications by Dr. Abhishek Shukla</h1>
+													<h1 id="as">List of Publications by Dr. Abhishek Shukla</h1>
 													<p>Jaypee University Of Engineering & Technology</p>
 													<p><a href="">Verified email at juet.ac.in</a></p>
 													<p><a href="https://scholar.google.com/citations?user=1HwjXrwAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
@@ -1449,7 +1454,7 @@ td .status {
 											</main>
 											<main class="table" id="publication_id">
 												<section class="table__header">
-													<h1>List of Publications by Dr. Manoj Dubey</h1>
+													<h1 id="md">List of Publications by Dr. Manoj Dubey</h1>
 													<p>Jaypee University Of Engineering & Technology</p>
 													<p><a href="">Verified email at juet.ac.in</a></p>
 													<p><a href="https://scholar.google.com/citations?user=wUZuolEAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
@@ -1536,7 +1541,7 @@ td .status {
 											</main>
 											<main class="table" id="publication_id">
 												<section class="table__header">
-													<h1>List of Publications by Dr. Rohit Mishra
+													<h1 id="rm">List of Publications by Dr. Rohit Mishra
 													</h1>
 													<p>Jaypee University Of Engineering & Technology</p>
 													<p><a href="">Verified email at juet.ac.in</a></p>
@@ -1704,16 +1709,26 @@ td .status {
 									<!-- Sidebar -->
 
 										<section>
-											<h3>Just a Subheading</h3>
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-											Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-											Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
-											<footer>
+											<h3>Team Members</h3>
+											<p>COE-RE publications</p>
+											<ul>
+												<li><a href="#dm" >Dr. Dhananjay Mishra</a></li>
+												<li><a href="#aks" >Dr. Amit Kumar Srivastava</a></li>
+												<li><a href="#gs" >Dr. Gaurav Saxena</li>
+												<li><a href="#pd" >Dr. Pankaj Dumka</a></li>
+												<li><a href="#ds" >Dr. D.K. Shukla</a></li>
+												<li><a href="#md" >Dr. Manoj Dubey</a></li>
+												<li><a href="#rm" >Dr. Rohit Mishra</a></li>
+												<li><a href="#as" >Dr. Abhishek Shukla</a></li>
+
+
+											</ul>
+											<!-- <footer>
 												<a href="#" class="button">Continue Reading</a>
-											</footer>
+											</footer> -->
 										</section>
 
-										<section>
+										<!-- <section>
 											<h3>Another Subheading</h3>
 											<ul class="links">
 												<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
@@ -1726,7 +1741,7 @@ td .status {
 											<footer>
 												<a href="#" class="button">More Random Links</a>
 											</footer>
-										</section>
+										</section> -->
 
 								</div>
 							</div>
@@ -1739,21 +1754,23 @@ td .status {
 				<div class="container">
 					<div class="row">
 						<section class="col-3 col-6-narrower col-12-mobilep">
-							<h3>Links to Stuff</h3>
+							<h3>Contact</h3>
 							<ul class="links">
-								<li><a href="#">Links to Stuff 1</a></li>
-								<li><a href="#">Links to Stuff 2</a></li>
-								<li><a href="#">Links to Stuff 3</a></li>
-								<li><a href="#">Links to Stuff 4</a></li>
-								<li><a href="#">Links to Stuff 5</a></li>
-								<li><a href="#">Links to Stuff 6</a></li>
-								<li><a href="#">Links to Stuff 7</a></li>
+								<li><a href="https://www.juet.ac.in/">https://www.juet.ac.in/</a></li>
+								<li><a href="amit.srivastava1@juet.ac.in">amit.srivastava1@juet.ac.in</a></li>
+								<li><a href="gaurav.saxena@juet.ac.in">gaurav.saxena@juet.ac.in</a></li>
+								<li><a href="dhananjay.mishra@juet.ac.in">dhananjay.mishra@juet.ac.in</a></li>
+								<li><a href="rohit.mishra@juet.ac.in">rohit.mishra@juet.ac.in</a></li>
+								<li><a href="#">manoj.dubey@juet.ac.in</a></li>
+                <li><a href="pankaj.dumka@juet.ac.in">pankaj.dumka@juet.ac.in</a></li>
+                <li><a href="dharmendra.shukla@juet.ac.in">dharmendra.shukla@juet.ac.in</a></li>
+                <li><a href="abhishek.shukla@juet.ac.in">abhishek.shukla@juet.ac.in</a></li>
+
 							</ul>
 						</section>
-						<section class="col-3 col-6-narrower col-12-mobilep">
+						<!-- <section class="col-3 col-6-narrower col-12-mobilep">
 							<h3>More Links to Stuff</h3>
 							<ul class="links">
-								<li><a href="#">More Links to Stuff 1</a></li>
 								<li><a href="#">More Links to Stuff 2</a></li>
 								<li><a href="#">More Links to Stuff 3</a></li>
 								<li><a href="#">More Links to Stuff 4</a></li>
@@ -1761,7 +1778,7 @@ td .status {
 								<li><a href="#">More Links to Stuff 6</a></li>
 								<li><a href="#">More Links to Stuff 7</a></li>
 							</ul>
-						</section>
+						</section> -->
 						<section class="col-6 col-12-narrower">
 							<h3>Get In Touch</h3>
 							<form>
